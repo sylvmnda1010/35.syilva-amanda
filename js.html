@@ -1,0 +1,18 @@
+Feature 1: Dark Mode Toggle
+const tombolTema = document.getElementById("tombol-tema");
+
+tombolTema.addEventListener("click", function() {
+    document.body.classList.toggle("mode-gelap");
+    
+    if (document.body.classList.contains("mode-gelap")) {
+        tombolTema.textContent = "☀️ Light Mode";
+    } else {
+        tombolTema.textContent = "🌙 Dark Mode";
+    }
+});
+ Feature 2: Tombol Sapa Interaktif
+const tombolSapa = document.getElementById("tombol-sapa");
+
+tombolSapa.addEventListener("click", function() {
+    alert("Halo! Terima kasih telah berkunjung ke website portofolio saya. Semoga harimu menyenangkan! 😊");
+});
